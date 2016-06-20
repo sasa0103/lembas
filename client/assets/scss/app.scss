@@ -1,8 +1,96 @@
 @import "settings";
 @import "foundation";
+@import "foundation-icons";
+@import "colors";
 
-#header {
-	background-color: black;
+#recipeViewMain {
+	background-color: $light-color;
   	background-image: url("../../pictures/holz.jpg");
-  	color: white;
+  	color: $light-font;
+  	background-size: 2000px;
+  	background-attachment: fixed;
+  	background-position: center;
+}
+
+h1 { 
+   //font-family: 'UniqueRegular'; 
+   color: $light-font;
+   margin-bottom: 0 !important;
+}
+
+h2 { 
+   color: $dark-font;
+   padding-top: 10px;
+}
+
+h1,h4 {
+   font-family: 'FeltpenRegular';
+   font-weight: normal; 
+   font-style: normal;
+}
+
+.fi-list {
+   font-size: 40px;
+   color: $light-font;
+}
+
+#bar {
+	background-color: $primary-color;
+}
+
+.title-bar {
+	background-color: $primary-color !important;
+}
+
+/* img {
+    -webkit-filter: opacity(40%); //Chrome, Safari, Opera 
+    filter: opacity(40%);
+} */
+
+#recipeViewMain {
+	color: $dark-font;
+}
+
+.card-divider {
+	text-align: right;
+}
+
+.accordion-title {
+	border-top: 1px solid $primary-color;
+}
+
+.panel-right,.panel-left {
+	div {
+		background-color: $light-color;	
+	} 
+}
+
+.panel-left > div {
+	padding: 0;
+}
+
+.accordion {
+	ul {
+	    list-style-type: none;
+	    margin-bottom: 0;
+	    padding-left: 10px;
+	}
+	li {
+	    list-style-type: none;
+	    margin: 10px 0 10px 0;
+	    padding-left: 10px;
+    	:hover{
+    		background-color: smartscale($light-color, 5%);
+    	}
+	}
+	a {
+	    color: black;
+	    :active {
+		    background-color: smartscale($light-color, 3%);
+		}
+	}
+}
+
+#search {
+	margin: 0.5rem;
 }

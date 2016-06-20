@@ -5,54 +5,112 @@ url: /
 
 <!--Hauptblock-->
 	<div class="grid-block">
-		<div class="small-2 grid-block">
-			<zf-panel class="medium-grid-block" id="panel-left" position="left"> 
-				<div class="grid-content">
-					<p>This is a left panel.</p>
-					<p>This is a left panel.</p>
-					<p>This is a left panel.</p>
-					<p>This is a left panel.</p>
-					<p>This is a left panel.</p>
-					<p>This is a left panel.</p>
-					<p>This is a left panel.</p>
-					<p>This is a left panel.</p>
+			<div zf-panel="" class="medium-grid-block medium-2 panel" id="panel-left" position="left"> 
+				<div class="grid-content noscroll">
+					<label>
+						<span id="search" class="inline-label">
+							<input type="search" placeholder="Search a thing">
+							<a href="#" class="button"><i class="fi-magnifying-glass"></i></a>
+						</span>
+					</label>
+
+					<zf-accordion auto-open="false" collapsible="true" multi-open="true">
+						<zf-accordion-item title="Backen">
+							<ul>
+								<li><a href="">Torten</a></li>
+								<li><a href="">Kuchen</a></li>
+								<li><a href="">Muffins</a></li>
+								<li><a href="">Gebäck</a></li>
+							</ul>
+						</zf-accordion-item>
+						<zf-accordion-item title="Kochen">
+							<ul>
+								<li><a href="">Suppe</a></li>
+								<li><a href="">Salat</a></li>
+								<li><a href="">Nudeln & Reis</a></li>
+								<li><a href="">Gemüse</a></li>
+								<li><a href="">Auflauf</a></li>
+								<li><a href="">Fisch</a></li>
+								<li><a href="">Vegetarisch</a></li>
+							</ul>
+						</zf-accordion-item>
+						<zf-accordion-item title="Dessert">
+							<ul>
+								<li><a href="">Creme</a></li>
+								<li><a href="">Eis</a></li>
+								<li><a href="">Frucht</a></li>
+							</ul>
+						</zf-accordion-item>
+						<zf-accordion-item title="Getränke">
+							<ul>
+								<li><a href="">Alkoholisch</a></li>
+								<li><a href="">Nicht-Alkoholisch</a></li>
+							</ul>
+						</zf-accordion-item>
+					</zf-accordion>
+
 				</div>
-			</zf-panel>
-		</div>
-		<div class="grid-block">
-			<div class="grid-content">
-				<p>Content</p>
-				<p>Content</p>
-				<p>Content</p>
-				<p>Content</p>
-				<p>Content</p>
-				<p>Content</p>
-				<p>Content</p>
-				<p>Content</p>
-				<p>Content</p>
-				<p>Content</p>
-				<p>Content</p>
-				<p>Content</p>
-				<p>Content</p>
-				<p>Content</p>
-				<p>Content</p>
-				<p>Content</p>
 			</div>
-		</div>
-		<div class="small-2 grid-block">
-			<div class="grid-content">
-				<zf-panel class="medium-grid-block" id="panel-right" position="right"> 
-					<div class="grid-content">
-						<p>This is a left panel.</p>
-						<p>This is a left panel.</p>
-						<p>This is a left panel.</p>
-						<p>This is a left panel.</p>
-						<p>This is a left panel.</p>
-						<p>This is a left panel.</p>
-						<p>This is a left panel.</p>
-						<p>This is a left panel.</p>
+		<div id="recipeViewMain" class="grid-block vertical">
+			<div class="grid-content noscroll shrink">
+				<h2><strong>Backen</strong></h2>
+			</div>
+			<!-- Cards -->
+			<div class="grid-block small-up-1 medium-up-3 ng-scope">
+				<div class="grid-content">
+					<div class="dark card">
+						<img src="http://placekitten.com/g/400/200">
+						<div class="card-divider">
+							<i class="fi-star"></i>
+							<i class="fi-star"></i>
+							<i class="fi-star"></i>
+							<i class="fi-star"></i>
+							<i class="fi-star"></i>
+						</div>
+						<div class="card-section">
+							<h4>Kadse</h4>
+							<p>Kleine süße Kadse, awwwwwwww.</p>
+						</div>
 					</div>
-				</zf-panel>
+				</div>	
+				<div class="grid-content">
+					<div class="dark card">
+						<img src="http://placekitten.com/g/600/300">
+						<div class="card-divider">
+							<i class="fi-star"></i>
+							<i class="fi-star"></i>
+							<i class="fi-star"></i>
+							<i class="fi-star"></i>
+							<i class="fi-star"></i>
+						</div>
+						<div class="card-section">
+							<h4>Andere Kadse</h4>
+							<p>Kleine andere süße Kadse.</p>
+						</div>
+					</div>
+				</div>	
+				<div class="grid-content">
+					<div class="dark card">
+						<img src="http://placekitten.com/g/800/400">
+						<div class="card-divider">
+							<i class="fi-star"></i>
+							<i class="fi-star"></i>
+							<i class="fi-star"></i>
+							<i class="fi-star"></i>
+							<i class="fi-star"></i>
+						</div>
+						<div class="card-section">
+							<h4>Noch eine Kadse</h4>
+							<p>Kleines süßvieh.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div zf-panel="" class="medium-grid-block medium-2" id="panel-right" position="right"> 
+			<div class="grid-content noscroll">
+
 			</div>
 		</div>
 	</div> 

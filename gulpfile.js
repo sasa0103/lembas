@@ -176,3 +176,7 @@ gulp.task('default', ['server'], function () {
   // Watch app templates
   gulp.watch(['./client/templates/**/*.html'], ['copy:templates']);
 });
+
+// Add Foundation Icons
+/*gulp.src('./client/assets/scss/foundation-icons.*')
+    .pipe(gulp.dest('./build/assets/css/'));*/

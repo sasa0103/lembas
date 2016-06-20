@@ -9,18 +9,28 @@
     <script src="./assets/js/templates.js"></script>
     <script src="./assets/js/routes.js"></script>
     <script src="./assets/js/app.js"></script>
+
+    <!-- fonts -->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/unique" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/feltpen" type="text/css"/>
+
   </head>
   <body>
     <div class="grid-frame vertical">
-      <div id="header">Hier könnte ein Bild sein</div>
-      <div class="grid-content shrink" style="padding: 0;">
+<!--       <div class="grid-content shrink" style="padding: 0;">
         <ul class="primary condense menu-bar">
-          <li><a id="sidebar-button-left" zf-toggle="panel-left">Open Panel</a></li>
-          <li><a><strong>Foundation for Apps</strong></a></li>
-          <li><a id="sidebar-button-right" zf-toggle="panel-right">Open Panel</a></li>
+          <li><a id="sidebar-button-left" zf-toggle="panel-left"><i class="fi-list"></i></a></li>
+          <li><h1><strong>Lembas</strong></h1></li>
+          <li><a id="sidebar-button-right" zf-toggle="panel-right"><i class="fi-list"></i></a></li>
         </ul>
+      </div> -->
+      <div class="primary title-bar">
+        <div class="center title" style="text-align: left;"><h1><strong>Lembas</strong></h1></div>
+          <span class="left"><a id="sidebar-button-left" zf-toggle="panel-left"><i class="fi-list show-for-small-only"></i></a></span>
+          <span class="right"><a id="sidebar-button-right" zf-toggle="panel-right"><i class="fi-list show-for-small-only"></i></a></span>
       </div>
-      <div ui-view class="grid-content">
+
+      <div ui-view class="grid-block">
       </div>
     </div>
   </body>

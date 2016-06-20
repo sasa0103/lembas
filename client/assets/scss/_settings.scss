@@ -30,6 +30,7 @@
 //  25. Title Bar
 
 @import "helpers/functions";
+@import "colors";
 
 // 1. CSS Exports
 // - - - - - - - - - - - - - - -
@@ -97,8 +98,13 @@
 // $body-font-style: normal;
 // $body-antialiased: true;
 
+// own color
+$light-color: $brown-light;
+$light-font: white;
+$dark-font: black;
+
 // Application Colors
-// $primary-color: #00558b;
+$primary-color: $brown2;
 // $secondary-color: #f1f1f1;
 // $alert-color: #F04124;
 // $info-color: #A0D3E8;
@@ -244,8 +250,8 @@
 // $button-padding: 0.85em 1em;
 // $button-margin: 0 $global-padding $global-padding 0;
 // $button-style: solid;
-// $button-background: $primary-color;
-// $button-color: auto;
+$button-background: $brown4;
+$button-color: white;
 // $button-radius: 0;
 // $button-sizes: (
 //   tiny: 0.7,
@@ -260,16 +266,16 @@
 // 7. Accordion
 // - - - - - - - - - - - - - - -
 
-// $accordion-border: 1px solid $gray-dark;
+$accordion-border: 0;
 
-// $accordion-title-background: $gray-light;
-// $accordion-title-background-hover: smartscale($accordion-title-background, 5%);
-// $accordion-title-background-active: smartscale($accordion-title-background, 3%);
+$accordion-title-background: white;
+$accordion-title-background-hover: smartscale($light-color, 5%);
+$accordion-title-background-active: smartscale($light-color, 3%);
 // $accordion-title-color: isitlight($accordion-title-background);
 // $accordion-title-color-active: isitlight($accordion-title-background);
 
 // $accordion-title-padding: $global-padding;
-// $accordion-content-padding: $global-padding; 
+$accordion-content-padding: 0; 
 
 // 8. Action Sheet
 // - - - - - - - - - - - - - - -
@@ -546,7 +552,7 @@
 // $panel-size-vertical: 300px;
 // $panel-padding: 0;
 
-// $panel-background: #fff;
+$panel-background:  $light-color;
 // $panel-shadow: 3px 0 10px rgba(black, 0.25);
 // $panel-animation-speed: 0.25s; 
 
@@ -590,12 +596,12 @@
 // 25. Title Bar
 // - - - - - - - - - - - - - - -
 
-// $titlebar-center-width: 50%;
+$titlebar-center-width: 65%;
 // $titlebar-side-width: (100% - $titlebar-center-width) / 2;
 // $titlebar-background: #eee;
 // $titlebar-color: #000;
-// $titlebar-border: 1px solid #ccc;
-// $titlebar-padding: $global-padding;
+$titlebar-border: 0;
+$titlebar-padding: 0 10px 0 10px;
 // $titlebar-item-classes: (
 //   center: 'center',
 //   left: 'left',
