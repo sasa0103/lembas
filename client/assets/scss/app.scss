@@ -23,6 +23,12 @@ h2 {
    padding-top: 10px;
 }
 
+h4 {
+		text-align: left;
+    padding-right: 10px;
+    display: inline-block;
+}
+
 h1,h4 {
    font-family: 'FeltpenRegular';
    font-weight: normal; 
@@ -32,6 +38,10 @@ h1,h4 {
 .fi-list {
    font-size: 40px;
    color: $light-font;
+}
+
+.fi-x {
+	color: $alert-color;
 }
 
 #bar {
@@ -76,7 +86,6 @@ h1,h4 {
 	    padding-left: 10px;
 	}
 	li {
-	    list-style-type: none;
 	    margin: 10px 0 10px 0;
 	    padding-left: 10px;
     	:hover{
@@ -93,4 +102,24 @@ h1,h4 {
 
 #search {
 	margin: 0.5rem;
+}
+
+table {
+	margin-left: 1.1rem;
+	tr {
+		:first-child {
+			text-align: right;
+		}
+		:last-child {
+			padding-left: 15px !important;
+		}
+	}
+}
+
+li {
+	list-style-type: none;
+}
+
+#shoppinglist {
+	border-bottom: 1px solid $primary-color;
 }

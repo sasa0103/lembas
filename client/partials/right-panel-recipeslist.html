@@ -1,0 +1,4 @@
+<h4>Rezepte</h4><a ng-click="edit = !edit"><i ng-show="!edit" class="fi-pencil"></i><i ng-show="edit" class="ng-hide fi-save"></i></a>
+<ul>
+	<li ng-repeat="rec in vars.recipes"><i ng-show="edit" class="fi-x"></i>{{ rec }}</li>
+</ul>
